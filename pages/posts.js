@@ -1,10 +1,7 @@
-
-
 import React from 'react'
 import { getPosts } from '../actions'
 
 class Posts extends React.Component {
-
   static async getInitialProps() {
     const posts = await getPosts()
 
@@ -17,13 +14,11 @@ class Posts extends React.Component {
       <div className="container">
         <h1>I am posts page</h1>
         <ul>
-          {
-            posts.map(p => (
-                <li key={p.id}>
-                  <span>{p.id}: </span> <span>{p.title}</span>
-                </li>
-            ))
-          }
+          {posts.map((p) => (
+            <li key={p.id}>
+              <span>{p.id}: </span> <span>{p.title}</span>
+            </li>
+          ))}
         </ul>
       </div>
     )

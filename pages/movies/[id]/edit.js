@@ -1,14 +1,10 @@
-
-
-import React from 'react'
 import Router from 'next/router'
-import MovieCreateForm from '../../../components/movieCreateForm'
+import React from 'react'
 import { getMovieById, updateMovie } from '../../../actions'
-
+import MovieCreateForm from '../../../components/movieCreateForm'
 
 class EditMovie extends React.Component {
-
-  static async getInitialProps({query}) {
+  static async getInitialProps({ query }) {
     const movie = await getMovieById(query.id)
 
     return { movie }
@@ -28,11 +24,11 @@ class EditMovie extends React.Component {
         <MovieCreateForm
           submitButton="Update"
           initialData={movie}
-          handleFormSubmit={this.handleUpdateMovie} />
+          handleFormSubmit={this.handleUpdateMovie}
+        />
       </div>
     )
   }
 }
-
 
 export default EditMovie

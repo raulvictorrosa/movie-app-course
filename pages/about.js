@@ -1,12 +1,9 @@
-
 import React from 'react'
 
 // functional component - arrow function
 const About = () => {
   const message = 'Hello World'
-  return (
-    <h1>Hello About Page - {message}</h1>
-  )
+  return <h1>Hello About Page - {message}</h1>
 }
 // WHEN TO USE:
 // 1. for smaller components
@@ -33,7 +30,6 @@ const About = () => {
 //   )
 // }
 
-
 // class About extends React.Component {
 //   render() {
 //     return (
@@ -41,8 +37,5 @@ const About = () => {
 //     )
 //   }
 // }
-
-
-
 
 export default About
