@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react'
 
 class Modal extends React.Component {
@@ -14,6 +15,24 @@ class Modal extends React.Component {
     alert('Submitting Modal')
     this.closeModal()
   }
+=======
+import React from "react";
+
+class Modal extends React.Component {
+  constructor(props) {
+    super(props);
+    this.closeButton = null;
+  }
+
+  closeModal() {
+    this.closeButton.click();
+  }
+
+  submitModal = () => {
+    alert("Submitting Modal");
+    this.closeModal();
+  };
+>>>>>>> 7b68404e1b71002bca2b26c606f61cd3ae1b036a
 
   render() {
     return (
@@ -74,7 +93,11 @@ class Modal extends React.Component {
           </div>
         </div>
       </div>
+<<<<<<< HEAD
     )
+=======
+    );
+>>>>>>> 7b68404e1b71002bca2b26c606f61cd3ae1b036a
   }
 }
 
@@ -118,4 +141,8 @@ class Modal extends React.Component {
 //   )
 // }
 
+<<<<<<< HEAD
 export default Modal
+=======
+export default Modal;
+>>>>>>> 7b68404e1b71002bca2b26c606f61cd3ae1b036a
