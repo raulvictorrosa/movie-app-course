@@ -1,9 +1,5 @@
 const Carousel = (props) => {
-<<<<<<< HEAD
   const { images } = props
-=======
-  const { images } = props;
->>>>>>> 7b68404e1b71002bca2b26c606f61cd3ae1b036a
 
   return (
     <div
@@ -17,11 +13,7 @@ const Carousel = (props) => {
             key={image.id}
             data-target="#carouselExampleIndicators"
             data-slide-to={index}
-<<<<<<< HEAD
             className={index === 0 ? 'active' : ''}
-=======
-            className={index === 0 ? "active" : ""}
->>>>>>> 7b68404e1b71002bca2b26c606f61cd3ae1b036a
           ></li>
         ))}
       </ol>
@@ -29,11 +21,7 @@ const Carousel = (props) => {
         {images.map((image, index) => (
           <div
             key={image.id}
-<<<<<<< HEAD
             className={`carousel-item ${index === 0 ? 'active' : ''}`}
-=======
-            className={`carousel-item ${index === 0 ? "active" : ""}`}
->>>>>>> 7b68404e1b71002bca2b26c606f61cd3ae1b036a
           >
             <img
               className="d-block img-fluid"
@@ -69,14 +57,7 @@ const Carousel = (props) => {
         `}
       </style>
     </div>
-<<<<<<< HEAD
   )
 }
 
 export default Carousel
-=======
-  );
-};
-
-export default Carousel;
->>>>>>> 7b68404e1b71002bca2b26c606f61cd3ae1b036a

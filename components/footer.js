@@ -7,14 +7,7 @@ const Footer = () => {
         </p>
       </div>
     </footer>
-<<<<<<< HEAD
   )
 }
 
 export default Footer
-=======
-  );
-};
-
-export default Footer;
->>>>>>> 7b68404e1b71002bca2b26c606f61cd3ae1b036a
